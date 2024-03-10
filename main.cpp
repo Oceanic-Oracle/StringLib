@@ -21,11 +21,10 @@ int main() {
 	std::cout << std::endl;
 
 	//Test 4
-
 	mystr::MyString str4("Hello, ");
 	mystr::MyString str5("world!");
-	mystr::MyString str6();
-	str6 = str3 + str5;
+	mystr::MyString str6;
+	str6 = str4 + str5;
 	str6.print();
 	std::cout << std::endl;
 
@@ -33,5 +32,29 @@ int main() {
 	str4 += str5;
 	str4.print();
 
+	std::cout << std::endl;
+
+	//Test 6
+	str6 = str4 + "2";
+	str6.print();
+
+	std::cout << std::endl;
+
+	//Test 7
+	str6 += "3";
+	str6.print();
+
+	std::cout << std::endl;
+
+	//Test 8
+	std::cout << str6[1] << std::endl;
+
+	//Test 9
+	str1.print(), std::cout << " ", str2.print();
+	(str1 == str2) ? (std::cout << "True" << std::endl) : (std::cout << "False" << std::endl);
+
+	//Test 10
+	str1.print(), std::cout << " ", str2.print();
+	(str1 != str2) ? (std::cout << "True" << std::endl) : (std::cout << "False" << std::endl);
 	return 0;
 }
